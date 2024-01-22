@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
 
 export default function Toggler({ darkMode, handleClick }) {
@@ -14,3 +15,8 @@ export default function Toggler({ darkMode, handleClick }) {
     </Box>
   );
 }
+
+Toggler.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
