@@ -9,6 +9,7 @@ import SocialIcon from './SocialIcon';
 import { info } from '../../info/Info';
 
 export default function Home() {
+  /* eslint-disable no-unused-vars */
   return (
     <Box
       component="main"
@@ -42,6 +43,7 @@ export default function Home() {
           {info.position}
           .
         </h2>
+
         <Box component="ul" p="0.8rem">
           {info.miniBio.map((bio, index) => (
             // ...
